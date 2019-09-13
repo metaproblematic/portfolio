@@ -5,6 +5,9 @@ const profile = require('./profile');
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
+
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,6 +35,6 @@ app.post('/thanks', (req, res) => {
     res.render('thanks', {contact: req.body})
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log('listening at http://localhost:3000');
 });
