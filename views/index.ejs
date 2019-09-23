@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> Bernadette's Portfolio </title>
-  </head>
-  <body>
-    <div class="container valign-wrapper">
-        <!-- <img class="responsive-img" src="https://w.wallhaven.cc/full/qd/wallhaven-qdw7qr.jpg"> -->
-        
-              <div class="card horizontal">
-                <div class="card-image">
-                  <img src="https://w.wallhaven.cc/full/qd/wallhaven-qdw7qr.jpg">
-                  <span class="card-title"><h5 class="center-align">Hello! I'm <%= person.firstName %> <%= person.lastName %></h5></span>
-                </div>
-                <div class="card-content">
-                  <p>A nascent developer, skilled editor, and a lover of all things code!</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">About</a>
-                  <a href="#">Projects</a>
-                  <a href="/contact">Contact</a>    
-            </div>
-          </div>
-      
-    </div> <!--container div-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
+<head>
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Bernadette's Portfolio </title>
+</head>
+
+<body>
+
+  <div class="hero-text">
+    <h1>Hello, I'm <%= person.firstName %> <%= person.lastName %>. </h1>
+    <h1>I'm a full-stack web developer in San Diego.</h1>
+  
+    <table>
+        <tr>
+          <th><a href="./profile">About</a></th>
+          <th>Projects</th>
+          <th><a href="/contact">Contact</a></th>
+        </tr>
+      </table>    
+
+  </div>
+</body>
+
 </html>

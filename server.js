@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 3000;
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use("/styles", express.static(__dirname + "/styles"));
+
 app.use('/profile', profile);
 
 app.set('views', './views');
