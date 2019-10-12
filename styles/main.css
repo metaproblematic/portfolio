@@ -18,7 +18,7 @@ ul {
 li {
     list-style-type: none;
     margin: 0 1.5vw;
-    font-size: 3.25vh;
+    font-size: 3.3vh;
 }
 
 a {
@@ -32,25 +32,22 @@ a:hover {
     color: darkgray;
 }
 
-
- .center-text {
-     line-height: 1.3em;
-     align-items: center;
-    justify-content: center;
+.center-text {
+    line-height: 1.35em;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-} 
+}
 
 .nav-links {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 0%;
 }
 
 .hero-text {
-    color: white; 
+    color: white;
     text-shadow: 2px 2px 4px #000000;
 }
