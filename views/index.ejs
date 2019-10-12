@@ -14,16 +14,25 @@
 <body>
 
   <div class="hero-text">
-    <h1>Hello, I'm <%= person.firstName %> <%= person.lastName %>. </h1>
-    <h1>I'm a full-stack web developer in San Diego.</h1>
+
+      <nav class="nav-links">
+          <ul>
+            <li>
+              <a href="./profile">About me</a>
+            </li>
+            <li>
+              <a href="/projects">Projects</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>    
+
+    <h1 class="center-text">Hello! I'm <%= person.firstName %> <%= person.lastName %>,<br> a full-stack developer in San Diego. </h1>
+    
   
-    <table>
-        <tr>
-          <th><a href="./profile">About</a></th>
-          <th>Projects</th>
-          <th><a href="/contact">Contact</a></th>
-        </tr>
-      </table>    
+    
 
   </div>
 </body>
